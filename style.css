@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f0f4f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-top: 8px solid #2d6a4f;
+}
+
+.header { text-align: center; margin-bottom: 25px; }
+.header i { font-size: 50px; color: #2d6a4f; }
+.header h1 { color: #1b4332; margin-top: 10px; }
+.header p { color: #52b788; font-size: 14px; }
+
+.input-group { margin-bottom: 20px; }
+.input-group label { display: block; margin-bottom: 8px; color: #1b4332; font-weight: 600; }
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d8e2dc;
+    border-radius: 10px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { background: #1b4332; }
+
+.result-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f7fff7;
+    border-left: 5px solid #2d6a4f;
+    border-radius: 10px;
+}
+
+.result-box h3 { color: #2d6a4f; margin-bottom: 10px; }
+#recommendationText { font-size: 20px; font-weight: bold; color: #1b4332; }
+#adviceText { display: block; margin-top: 10px; color: #555; font-style: italic; }

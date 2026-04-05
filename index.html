@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriSmart - Crop Advisor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <i class="fa-solid fa-seedling"></i>
+            <h1>AgriSmart Advisor</h1>
+            <p>Lankawe idamata sudusu boga thoramu</p>
+        </div>
+
+        <div class="form">
+            <div class="input-group">
+                <label><i class="fa-solid fa-flask"></i> Soil pH Level (0-14)</label>
+                <input type="number" id="phLevel" step="0.1" placeholder="e.g. 6.5">
+            </div>
+
+            <div class="input-group">
+                <label><i class="fa-solid fa-map-location-dot"></i> Region in Sri Lanka</label>
+                <select id="region">
+                    <option value="up-country">Up Country (Nuwara Eliya / Kandy)</option>
+                    <option value="low-country">Low Country (Colombo / Galle)</option>
+                    <option value="dry-zone">Dry Zone (Anuradhapura / Jaffna)</option>
+                </select>
+            </div>
+
+            <button onclick="recommendCrop()" id="btn">Get Recommendation</button>
+        </div>
+
+        <div id="resultBox" class="result-box" style="display: none;">
+            <h3><i class="fa-solid fa-circle-check"></i> Best Crops for You:</h3>
+            <p id="recommendationText"></p>
+            <small id="adviceText"></small>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
